@@ -1,0 +1,3 @@
+A partir d'un fichier xml, dans le main, ChargeurMagasin crée un objet chargeur de type ChargeurMagasin et ensuite demande a ce meme objet de chargé le magasin.
+l'objet chargeur crée ensuite magasin de type Magasin et chargeCd1 de type ChargeurCD. chargeur utilise la méthode chargeCD dans chargeCd1, cette méthode crée un objet cd1 de type cd en y mettant le nom de l'artiste et du cd. La méthode extrait aussi les pistes et les ajoutes dans le cd. 
+Une fois le cd totalement chargé la méthode chargerCD est fini et l'objet cd1 est donc attribué a une variable, cette variable est utilisé dans la méthode ajouteCd mettant dans le magasin le cd chargé. La méthode chargerMagasin est fini.
