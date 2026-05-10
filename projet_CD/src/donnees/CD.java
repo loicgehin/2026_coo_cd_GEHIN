@@ -97,5 +97,13 @@ public class CD {
 		return (resultat);
 	}
 
-	// TODO 
+	public int compareTitre(CD cd) {
+		return this.nomCD.compareTo(cd.nomCD);
+	}
+
+	public int compareArtiste(CD cd) {
+		return this.nomArtiste.compareTo(cd.nomArtiste);
+	}
+
+
 }
