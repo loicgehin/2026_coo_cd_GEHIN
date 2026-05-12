@@ -80,32 +80,4 @@ public class Magasin {
 		}
 		listeCds = triee;
 	}
-
-	public void trierAlbum(){
-		ArrayList<CD> triee=new ArrayList<>();
-
-		while (!listeCds.isEmpty()){
-			int min=0;
-			for(int i=0;i<listeCds.size();i++){
-				if(listeCds.get(i).compareTitre(listeCds.get(min))<0)
-					min=i;
-			}
-			triee.add(listeCds.remove(min));
-		}
-		listeCds=triee;
-	}
-
-	public void trierAriste(){
-		ArrayList<CD> triee=new ArrayList<>();
-
-		while (!listeCds.isEmpty()){
-			int min=0;
-			for(int i=0;i<listeCds.size();i++){
-				if(listeCds.get(i).compareArtiste(listeCds.get(min))<0)
-					min=i;
-			}
-			triee.add(listeCds.remove(min));
-		}
-		listeCds=triee;
-	}
 }
