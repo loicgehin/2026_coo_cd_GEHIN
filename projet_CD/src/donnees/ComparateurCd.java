@@ -1,6 +1,6 @@
 package donnees;
 
-public abstract interface ComparateurCd {
+public interface ComparateurCd {
 
-    public abstract boolean etreAvant(CD cd1, CD cd2);
+    public boolean etreAvant(CD cd1, CD cd2);
 }
