@@ -1,7 +1,5 @@
 import XML.ChargeurMagasin;
-import donnees.CD;
-import donnees.InfoPiste;
-import donnees.Magasin;
+import donnees.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -31,7 +29,7 @@ public class TestTri {
     @Test
     public void testTrierAlbum() {
         //methode testee
-        magasin.trierAlbum();
+        magasin.trier(new ComparateurAlbum());
 
         CD premier=magasin.getCd(0);
         CD dernier=magasin.getCd(magasin.getNombreCds()-1);
@@ -44,7 +42,7 @@ public class TestTri {
     @Test
     public void testTrierArtiste() {
         //methode testee
-        magasin.trierAriste();
+        magasin.trier(new ComparateurArtiste());
 
         CD premier=magasin.getCd(0);
         CD dernier=magasin.getCd(magasin.getNombreCds()-1);
