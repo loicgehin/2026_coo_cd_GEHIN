@@ -68,8 +68,17 @@ public class Magasin {
 		return(res);
 	}
 
-	public void trierTitre(){
-		throw new Error();
+	public void trier(ComparateurCd comparateur) {
+		ArrayList<CD> triee= new ArrayList<>();
+		while (!listeCds.isEmpty()){
+			int min=0;
+			for  (int i = 0; i < listeCds.size(); i++) {
+				if(comparateur.etreAvant(listeCds.get(i),  listeCds.get(min)))
+					min=i;
+			}
+			triee.add(listeCds.remove(min));
+		}
+		listeCds = triee;
 	}
 
 	public void trierAlbum(){
